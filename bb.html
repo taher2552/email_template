@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Montserrat&display=swap);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: DM Sans;
+        }
+
+        .template_wrapper {
+            background-color: #f4f4f4;
+        }
+
+        .template_container {
+            width: 100%;
+            background-color: #f4f4f4;
+            height: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .template_table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .template_first_row img {
+            display: block;
+            margin: 0 auto;
+            width: 120px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .template_box {
+            max-width: 600px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .template_box_content {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 100%;
+            padding: 1rem;
+            padding-bottom: 0rem;
+        }
+
+        .template_heading {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .template_address {
+            font-size: 18px;
+            color: #111539"
+
+        }
+
+        .email_notification {
+            margin-right: 10px;
+        }
+
+        .template_color_box {
+            background-color: rgb(246, 226, 229);
+            border-radius: 5rem;
+            height: 2rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0.3rem 1.5rem;
+        }
+
+        .template_color_box img {
+            height: 1rem;
+            width: 1rem;
+        }
+
+        .template_box_flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .template_urgent {
+            font-size: 0.8rem;
+        }
+
+        .template_box_new_color {
+            background-color: #ebf8f5;
+        }
+
+        .template_tag {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .template_last_tag {
+            align-items: start;
+        }
+
+        .template_tag img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .template_mail img {
+            height: 20px;
+            width: 30px;
+        }
+
+        .template_left {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .template_message {
+            font-size: 16px;
+            color: #111539
+        }
+
+        .template_see_more {
+            color: #2d79f1;
+            text-decoration: underline
+        }
+
+        .template_main_flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 2rem;
+            padding: 1rem;
+            padding-top: 2rem;
+        }
+
+        .template_left {
+            width: 58%;
+        }
+
+        .template_right img {
+            height: 108px;
+            width: 180px;
+        }
+
+        .template_respond {
+            color: #808487;
+            font-size: 0.8rem;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+
+        .template_update {
+            color: #808487;
+            font-size: 0.7rem;
+        }
+
+        .template_button_flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+            padding: 1rem;
+        }
+
+        .template_contact_btn{
+            background-color: #2d79f0;
+            padding: 0.6rem 4rem;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 0.3125rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .template_view_btn{
+            border: 1px solid #2d79f0;
+            background-color: #fff;
+            color: #2d79f0;
+        }
+
+        @media (max-width: 600px) {
+            .template_box_content {
+                font-size: 18px;
+                padding: 0.8rem;
+            }
+
+            .email_notification {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+
+            .template_box_flex {
+                gap: 1rem;
+                justify-content: start;
+            }
+
+            .template_left {
+                width: 100%;
+            }
+
+            .template_main_flex {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+            .template_contact_btn{
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <main class="template_wrapper">
+        <div class="template_container">
+            <table class="template_table" cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                        <td align="start" class="template_first_row">
+                            <img src="https://d2bdxhtfh3zsqc.cloudfront.net/asset/images/logo.svg" alt="logo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box">
+                                <div class="template_box_content">
+                                    <img src="https://www.bookmyplayer.com/asset/images/email_bell.png" class="email_notification"
+                                        alt="notification">
+                                    <h1 class="template_heading"> Zoe is looking for a Personal Trainer</h1>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box">
+                                <div class="template_box_content">
+                                    <img src="https://www.bookmyplayer.com/asset/images/email_location.png" class="email_notification"
+                                        alt="location">
+                                    <span class="template_address">High Wycombe, HP15</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box template_box_flex">
+                                <div class="template_color_box">
+                                    <img src="https://www.bookmyplayer.com/asset/images/email_arrow.png" class="email_notification" alt="urgent">
+                                    <span class="template_urgent">Urgent</span>
+                                </div>
+                                <div class="template_color_box template_box_new_color">
+                                    <img src="https://www.bookmyplayer.com/asset/images/email_tick.png" class="email_notification" alt="verify">
+                                    <span class="template_urgent">Verified Number</span>
+                                </div>
+                                <div class="template_color_box template_box_new_color">
+                                    <img src="https://www.bookmyplayer.com/asset/images/email_info.png" class="email_notification" alt="details">
+                                    <span class="template_urgent">Additional Details</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box template_main_flex">
+                                <div class="template_left">
+                                    <div class="template_tag">
+                                        <img src="https://www.bookmyplayer.com/asset/images/email_img.png" alt="credits">
+                                        <span class="template_credits">10 credits to respond</span>
+                                    </div>
+                                    <div class="template_tag">
+                                        <img src="https://www.bookmyplayer.com/asset/images/email_phone.png" class="template_phone" alt="phone">
+                                        <span class="template_credits">077** ******</span>
+                                    </div>
+                                    <div class="template_tag template_mail">
+                                        <img src="https://www.bookmyplayer.com/asset/images/email_message.png" alt="email">
+                                        <span class="template_credits">z*********r@i****d.com</span>
+                                    </div>
+                                    <div class="template_tag template_last_tag">
+                                        <img src="https://www.bookmyplayer.com/asset/images/email_info_2.png" alt="description">
+                                        <p>
+                                            <span class="template_message">
+                                                “Hi. I’m looking for a personal trainer. I’m 43, never been to the gym,
+                                                never worked out, looking for a change, want to look and feel good. I’m
+                                                not over weight but would like to tone up. Can anyone h...”
+                                                <a href="" target="_blank">
+                                                    <span>
+                                                        <span class="template_see_more">
+                                                            See more
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="template_right">
+                                    <img src="https://www.bookmyplayer.com/asset/images/email_map.png" alt="map">
+                                    <div>
+                                        <p class="template_respond">1/5 Professionals have responded</p>
+                                        <p class="template_update">Last updated 26 may, 13:05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box template_button_flex">
+                                <a href="">
+                                    <button class="template_contact_btn">Contact</button>
+                                </a>
+                                <a href="">
+                                    <button class="template_contact_btn template_view_btn">View Details</button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
