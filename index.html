@@ -114,63 +114,89 @@
             padding-bottom: 1rem;
         }
 
-        .template_last_tag{
+        .template_last_tag {
             align-items: start;
         }
 
         .template_tag img {
-            height:30px;
+            height: 30px;
             width: 30px;
         }
 
-        .template_mail img{
+        .template_mail img {
             height: 20px;
             width: 30px;
         }
 
-        .template_left{
+        .template_left {
             display: flex;
             justify-content: start;
             align-items: start;
             flex-direction: column;
         }
 
-        .template_message{
-            font-size:16px;
-            color:#111539
+        .template_message {
+            font-size: 16px;
+            color: #111539
         }
 
-        .template_see_more{
-            color:#2d79f1;
-            text-decoration:underline
+        .template_see_more {
+            color: #2d79f1;
+            text-decoration: underline
         }
 
-        .template_main_flex{
+        .template_main_flex {
             display: flex;
             justify-content: space-between;
             align-items: start;
-            gap:2rem;
+            gap: 2rem;
             padding: 1rem;
             padding-top: 2rem;
         }
 
-        .template_left{
+        .template_left {
             width: 58%;
         }
-        .template_right img{
+
+        .template_right img {
             height: 108px;
             width: 180px;
         }
 
-        .template_respond{
-            color:#808487;
+        .template_respond {
+            color: #808487;
             font-size: 0.8rem;
             margin-top: 2rem;
             font-weight: 600;
         }
-        .template_update{
-            color:#808487;
+
+        .template_update {
+            color: #808487;
             font-size: 0.7rem;
+        }
+
+        .template_button_flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+            padding: 1rem;
+        }
+
+        .template_contact_btn{
+            background-color: #2d79f0;
+            padding: 0.6rem 4rem;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 0.3125rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .template_view_btn{
+            border: 1px solid #2d79f0;
+            background-color: #fff;
+            color: #2d79f0;
         }
 
         @media (max-width: 600px) {
@@ -190,15 +216,18 @@
                 justify-content: start;
             }
 
-            .template_left{
-            width:100%;
-        }
+            .template_left {
+                width: 100%;
+            }
 
-            .template_main_flex{
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-        }
+            .template_main_flex {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+            .template_contact_btn{
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -273,27 +302,41 @@
                                         <img src="asset/images/email_info_2.png" alt="">
                                         <p>
                                             <span class="template_message">
-                                             “Hi. I’m looking for a personal trainer. I’m 43, never been to the gym, never worked out, looking for a change, want to look and feel good. I’m not over weight but would like to tone up. Can anyone h...”
-                                             <a href="" target="_blank">
-                                              <span>
-                                               <span class="template_see_more">
-                                                See more
-                                               </span>
-                                              </span>
-                                             </a>
+                                                “Hi. I’m looking for a personal trainer. I’m 43, never been to the gym,
+                                                never worked out, looking for a change, want to look and feel good. I’m
+                                                not over weight but would like to tone up. Can anyone h...”
+                                                <a href="" target="_blank">
+                                                    <span>
+                                                        <span class="template_see_more">
+                                                            See more
+                                                        </span>
+                                                    </span>
+                                                </a>
                                             </span>
-                                           </p>
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="template_right">
-                                   <img src="asset/images/email_map.png" alt="">
-                                   <div>
-                                    <p class="template_respond">1/5 Professionals have responded</p>
-                                    <p class="template_update">Last updated 26 may, 13:05</p>
-                                   </div>
+                                    <img src="asset/images/email_map.png" alt="">
+                                    <div>
+                                        <p class="template_respond">1/5 Professionals have responded</p>
+                                        <p class="template_update">Last updated 26 may, 13:05</p>
+                                    </div>
                                 </div>
 
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box template_button_flex">
+                                <a href="">
+                                    <button class="template_contact_btn">Contact Zoe</button>
+                                </a>
+                                <a href="">
+                                    <button class="template_contact_btn template_view_btn">View Details</button>
+                                </a>
                             </div>
                         </td>
                     </tr>
