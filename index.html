@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Montserrat&display=swap);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: DM Sans;
+        }
+
+        .template_wrapper {
+            background-color: #f4f4f4;  
+        }
+
+        .template_container {
+            width: 100%;
+            background-color: #f4f4f4;
+            height: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .template_table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .template_first_row img {
+            display: block;
+            margin: 0 auto;
+            width: 120px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .template_box {
+            max-width: 600px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .template_box_content {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 100%;
+            padding: 1rem;
+            padding-bottom: 0rem;
+        }
+
+        .template_heading{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .template_address{
+            font-size:18px;
+            color:#111539"
+        }
+
+        .email_notification {
+            margin-right: 10px;
+        }
+        @media (max-width: 600px) {
+            .template_box_content {
+                font-size: 18px;
+                padding: 0.8rem;
+            }
+
+            .email_notification {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="template_wrapper">
+        <div class="template_container">
+            <table class="template_table" cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                        <td align="start" class="template_first_row">
+                            <img src="https://d2bdxhtfh3zsqc.cloudfront.net/asset/images/logo.svg" alt="logo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box">
+                                <div class="template_box_content">
+                                    <img src="email_bell.png" class="email_notification" alt="notification">
+                                    <span class="template_heading"> Zoe is looking for a Personal Trainer</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="template_box">
+                                <div class="template_box_content">
+                                    <img src="email_location.png" class="email_notification" alt="location">
+                                    <span class="template_address">High Wycombe, HP15</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
